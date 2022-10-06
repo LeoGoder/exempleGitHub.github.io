@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- utiliser live server et emmet live-->
-    <h1>Test</h1>
+    <h1>Exemple de chose a faire avec bootstrap</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <div class="container py-5">
         <h2 class="display-6 mb-5">Les backgrounds</h2>
@@ -28,6 +28,121 @@
         <!-- [visible|invisible] permet de cacher du texte -->
         <p class="visible">Hello world </p>
         <p class="invisible">Hello world</p>
+
+        <!-- permet de modifier la taille du texte -->
+        <p class="">Test</p>
+        <p class="">Test</p>
+        <p class="fs-3">Test</p>
+        <p class="fs-4">Test</p>
+        <p class="fs-5">Test</p>
+        <p class="fs-6">Test</p>
+
+        <!-- aligner des paragraphes réactif [text-sm|md|lg|xl-center|end|start...] -->
+        <!-- md et sm ont pour diff la taill en pixel qu'il prenne 
+        col-* - 0 (xs)
+        col-sm-* - 576px
+        col-md-* - 768px
+        col-lg-* - 992px
+        col-xl-* - 1200px
+        col-xxl-* - 1400px-->
+
+        <p class="text-md-center">TestAlignement</p>
+        <p class="text-md-end">TestAlignement</p>
+        <p class="text-md-start">TestAlignement</p>
+        <p class="text-md-lg">TestAlignement</p>
+        <p class="text-sm-center">TestAlignement</p>
+        <p class="text-sm-end">TestAlignement</p>
+        <p class="text-sm-start">TestAlignement</p>
+        <p class="text-sm-lg">TestAlignement</p>
+
+        <!-- utilisation de lead pour mettre en avant un texte -->
+        <p class="lead">	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <!-- Le poids (gras) du texte, [fw-bold|bolder|normal|light|lighter] -->
+        <!-- Italique [fst-italic|normal] -->
+        <!-- monospace [font-monospace] -->
+        <p class="fw-bold">Bold text.</p>
+        <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+        <p class="fw-normal">normal weight text</p>
+        <p class="fw-light">light weight text</p>
+        <p class="fw-lighter">lighter weight text (relative to the parent element).</p>
+        <p class="fst-italic">Italic text</p>
+        <p class="fst-normal">normal font style text</p>
+        <p class="font-monospace">this is in monospace</p>
+        <!-- Line height (hauteur de ligne)avec [lh-1|sm|base|lg] -->
+        <p class="lh-1">Texte random juste pour faire des testslllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <p class="lh-sm">Texte random juste pour faire des testslllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <p class="lh-base">Texte random juste pour faire des testslllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <p class="lh-lg">Texte random juste pour faire des testslllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <!-- Text decoration [text-decoration-underline|line-through|none] -->
+        <p class="text-decoration-underline">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <p class="text-decoration-line-through">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <a href="#" class="text-decoration-none">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
+        <!-- gérer le wrapping avec un texte -->
+        <!-- [text-wrap|nowrap|break] -->
+        <p class="bg-primary text-light fs-5 mb-5" style="width: 150px">Du texte qui wrap si il n'y a plus de place</p>
+        <!-- Les balises de changement sémantique -->
+        <!-- <mark> Pour souligner un élément important -->
+        <!-- <del> le texte était dans le document, mais a été supprimé. -->
+        <!-- <s> Veut dire texte qui n'est plus d'actualité par rapport à l'objet du document -->
+        <!-- <ins> Element important, sérieux, on le met en gras -->
+        <!-- <em> Changement de ton au niveau de la lecture -->
+        <p>You can use the mark tag to <mark>highlight</mark></p>
+        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+        <p><s>This line of text is meant to be treated as no longer accurate</s></p>
+        <p><ins>This line of text is meant to be treated as an addition to the document  </ins></p>
+        <p><u>This line of text will render as underlined </u></p>
+        <p><small>this line of texte is meant to be treated as fine print</small></p>
+        <p><strong>this lien rendered as bold text.</strong></p>
+        <p><em>this line rendered as italicized text</em></p>
+
+        <!-- pour faire un blokquote [blockquote] -->
+        <blockquote>
+            <p>Une blockquote est un text mis en avant</p>
+        </blockquote>
+        <!-- Blockquote footer [blockquote] sur la citation [blockquote-footer] sur la référence-->
+        <figure class="mb-5">
+            <blockquote class="">
+                <p>
+                    "Pour s'améliorer, il faut changer. Donc, pour être parfait, il faut avoir changé souvent"
+                </p>
+            </blockquote>
+        </figure>
+
+        <!-- [text-truncate] -->
+        <!-- On donne une largeur max à l'aide d'une colonne et on tronque -->
+
+        <div class="row">
+            <div class="col-2 text-truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum 
+            nesciunt porro laborum fugiat reprehenderit! Dolore.
+            </div>
+        </div>
+            <span class="d-inline-block text-truncate mb-5" style="max-width: 150px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum 
+            nesciunt porro laborum fugiat reprehenderit! Dolore.
+            </span>
+
+        <!-- créer des listes -->
+        <!-- sur le parent [list-group] -->
+        <!-- sur les enfants [list-group-item] -->
+        <!-- .active pour rajouter un item actif -->
+        <!-- .disabled pour griser un élément -->
+
+        <ul class="mb-5">
+            <li class="active">item</li>
+            <li class="">item</li>
+            <li class="">item</li>
+            <li class="">item</li>
+            <li class="disabled" aria-disabled="true">item</li>
+        </ul>
+        <!-- taille espace -->
+        <!-- largeur width:25%,50%,etc... [w-25|50|75|100|auto] -->
+        <div class=" text-light bg-primary p-3 mb-2">Width 25%</div>
+        <div class=" text-light bg-primary p-3 mb-2">Width 50%</div>
+        <div class=" text-light bg-primary p-3 mb-2">Width 75%</div>
+        <div class="w-100 text-light bg-primary p-3 mb-2">Width 100%</div>
+        <div class="w-auto text-light bg-primary p-3">Width Auto</div>
+        <!-- hauteur height -->
     </div>
 </body>
 </html>
